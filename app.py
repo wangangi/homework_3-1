@@ -80,8 +80,7 @@ app.layout = html.Div([
     # add duration
     html.H4("Select the data duration:"),
     html.Div(children=[
-        html.P("You may set the query duration up to a week." + \
-               "Duration includes S (seconds), D (days) or W (week)")
+        html.P("You may set the query duration up to a week." )
     ], style={'width': '365px'}),
     html.Div(
         ["Input duration:", dcc.Input(
@@ -94,8 +93,8 @@ app.layout = html.Div([
         style={'width': '365px'}
     ),
     # add regular trading hour
-    html.H4("Select the regular trading hour:" + \
-            "(Set to 0 for outside of RTH, 1 for only RTH)"),
+    html.H4("Select the regular trading hour:"),
+    # Set to 0 for outside RTH, 1 for only RTH
     html.Div(
         ["Select bar size: ", dcc.RadioItems(options=[{"label": "return all data", "value": False},
                                                       {"label": "return regular trading time", "value": True}],
