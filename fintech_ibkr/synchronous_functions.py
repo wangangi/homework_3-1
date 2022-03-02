@@ -53,7 +53,7 @@ class ibkr_app(EWrapper, EClient):
         # Take a look at candlestick_plot.ipynb for some help!
         # assign the dataframe to self.historical_data.
         # print(reqId, bar)
-        self.historical_data = bar
+
         row = pd.DataFrame(
             {'date': [bar.date],
              'open': [bar.open],

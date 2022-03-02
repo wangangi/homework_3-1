@@ -192,7 +192,7 @@ def time_reformat(time):
     [State('currency-input', 'value'), State('what-to-show', 'value'),
      State('edt-date', 'date'), State('edt-hour', 'value'),
      State('edt-minute', 'value'), State('edt-second', 'value'),
-     State('bar-size', 'value'), State('use-RTH', 'value'),
+     State('bar-size', 'value'), State('use_RTH', 'value'),
      State('duration-Int', 'value'), State('duration-type', 'value')
      ]
 )
@@ -201,7 +201,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
                              use_RTH):
     # n_clicks doesn't
     # get used, we only include it for the dependency.
-
+    print(n_clicks)
     if any([i is None for i in [edt_date, edt_hour, edt_minute, edt_second]]):
         endDateTime = ''
     else:
