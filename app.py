@@ -273,7 +273,7 @@ def update_candlestick_graph(n_clicks, currency_string, what_to_show,
 
     # currency_string = 'default Apple price data fetch'
     ############################################################################
-    ############################################################################
+    ############################################################################3
 
     # Return your updated text to currency-output, and the figure to candlestick-graph outputs
     return ('Submitted query for ' + currency_string), fig
