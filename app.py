@@ -8,6 +8,8 @@ from fintech_ibkr import *
 import pandas as pd
 
 # Make a Dash app!
+from fintech_ibkr.synchronous_functions import fetch_contract_details
+
 app = dash.Dash(__name__)
 
 server = app.server
