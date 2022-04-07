@@ -1,0 +1,2 @@
+timestamp,order_id,client_id,perm_id,con_id,symbol,action,size,order_type,lmt_price
+2022-04-06 20:32:03,1.0,10645.0,35771213.0,0,AUD,BUY,200,MKT,
